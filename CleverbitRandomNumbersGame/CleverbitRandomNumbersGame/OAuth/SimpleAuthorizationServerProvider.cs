@@ -15,16 +15,15 @@ namespace CleverbitRandomNumbersGame.OAuth
       context.Validated();
     }
 
-    
+
     public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
     {
-      // CORS ayarlarını set ediyoruz.
-      context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+      // CORS a
+      //context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
       Service<User> Users = new Service<User>();
       var service_Result = Users.GetAll();
 
-      // Kullanıcının access_token alabilmesi için gerekli validation işlemlerini yapıyoruz.
       if (service_Result.Any(x => x.Username == context.UserName && x.Password == context.Password))
       {
         var identity = new ClaimsIdentity(context.Options.AuthenticationType);
@@ -40,3 +39,4 @@ namespace CleverbitRandomNumbersGame.OAuth
       }
     }
   }
+}

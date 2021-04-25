@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
@@ -13,7 +14,6 @@ namespace CleverbitRandomNumbersGame.OAuth
   {
     public void Configuration(IAppBuilder app)
     {
-      app.UseCors(CorsOptions.AllowAll);
       var myProvider = new SimpleAuthorizationServerProvider();
       OAuthAuthorizationServerOptions options = new OAuthAuthorizationServerOptions
       {
