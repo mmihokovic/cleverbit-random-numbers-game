@@ -212,6 +212,7 @@
     <Content Include="cleverbit-game\src\app\components\matches\matches.component.scss" />
     <Content Include="cleverbit-game\src\app\components\play-match\play-match.component.scss" />
     <Content Include="cleverbit-game\src\app\components\user\user.component.scss" />
+    <None Include="cleverbit-game\proxy.config.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
