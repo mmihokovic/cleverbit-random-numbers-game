@@ -10,6 +10,11 @@ namespace CleverbitRandomNumbersGame.Domain
 {
     public class EFContext : DbContext
     {
+        public EFContext() : base("name = Cleverbit_Entities")
+        {
+            //Database.SetInitializer<EFContext>(new DbInit());
+        }
+
         public DbSet<User> Users { get; set; }
         public DbSet<Match> Matches { get; set; }
 

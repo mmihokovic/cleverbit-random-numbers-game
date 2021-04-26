@@ -12,6 +12,6 @@ namespace CleverbitRandomNumbersGame.Domain.Services
         Match GetActiveMatch();
         int PlayActiveMatch(string username);
         List<Match> GetAllMatches();
-        Match GetPlayerMatch(string username);
+        PlayerMatch GetPlayerMatch(string username);
     }
 }

@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DbInit.cs" />
     <Compile Include="EFContext.cs" />
     <Compile Include="Exceptions\MatchException.cs" />
     <Compile Include="Models\Match.cs" />

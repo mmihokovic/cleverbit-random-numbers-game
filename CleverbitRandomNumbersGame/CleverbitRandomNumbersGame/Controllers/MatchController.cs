@@ -30,7 +30,7 @@ namespace CleverbitRandomNumbersGame.Controllers
     [HttpGet]
     [Route("get-player-match")]
     [Authorize]
-    public Match GetPlayerMatch(string username)
+    public PlayerMatch GetPlayerMatch(string username)
     {
       return matchService.GetPlayerMatch(username);
     }

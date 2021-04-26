@@ -8,5 +8,9 @@ namespace CleverbitRandomNumbersGame.Domain.Exceptions
 {
     public class MatchException : Exception
     {
+        public MatchException(string message): base(message)
+        {
+
+        }
     }
 }
