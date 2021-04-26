@@ -1,3 +1,4 @@
+
 using Microsoft.Owin.Security.OAuth;
 using System;
 using System.Collections.Generic;
@@ -5,26 +6,28 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
+using CleverbitRandomNumbersGame.Domain.Services;
 
 namespace CleverbitRandomNumbersGame.OAuth
 {
   public class SimpleAuthorizationServerProvider : OAuthAuthorizationServerProvider
   {
+    private readonly IUserService userService;
+
+    public SimpleAuthorizationServerProvider(IUserService userService)
+    {
+      this.userService = userService;
+    }
+
     public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)
     {
       context.Validated();
     }
 
-
     public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
     {
-      // CORS a
-      //context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
 
-      Service<User> Users = new Service<User>();
-      var service_Result = Users.GetAll();
-
-      if (service_Result.Any(x => x.Username == context.UserName && x.Password == context.Password))
+      if (userService.CheckUsernameAndPassword(context.UserName, context.Password))
       {
         var identity = new ClaimsIdentity(context.Options.AuthenticationType);
 
