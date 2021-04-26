@@ -171,6 +171,10 @@
     <Content Include="cleverbit-game\e2e\protractor.conf.js" />
     <Content Include="cleverbit-game\karma.conf.js" />
     <Content Include="cleverbit-game\src\app\app.component.html" />
+    <Content Include="cleverbit-game\src\app\components\login\login.component.html" />
+    <Content Include="cleverbit-game\src\app\components\matches\matches.component.html" />
+    <Content Include="cleverbit-game\src\app\components\play-match\play-match.component.html" />
+    <Content Include="cleverbit-game\src\app\components\user\user.component.html" />
     <Content Include="cleverbit-game\src\favicon.ico" />
     <Content Include="cleverbit-game\src\index.html" />
     <Content Include="Global.asax" />
@@ -204,6 +208,10 @@
     <Content Include="cleverbit-game\tsconfig.json" />
     <Content Include="cleverbit-game\tsconfig.spec.json" />
     <Content Include="cleverbit-game\tslint.json" />
+    <Content Include="cleverbit-game\src\app\components\login\login.component.scss" />
+    <Content Include="cleverbit-game\src\app\components\matches\matches.component.scss" />
+    <Content Include="cleverbit-game\src\app\components\play-match\play-match.component.scss" />
+    <Content Include="cleverbit-game\src\app\components\user\user.component.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -231,6 +239,28 @@
     <TypeScriptCompile Include="cleverbit-game\src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="cleverbit-game\src\app\app.component.ts" />
     <TypeScriptCompile Include="cleverbit-game\src\app\app.module.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\login\login.component.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\login\login.component.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\matches\matches.component.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\matches\matches.component.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\play-match\play-match.component.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\play-match\play-match.component.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\user\user.component.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\components\user\user.component.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\interceptors\auth.interceptor.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\interceptors\auth.interceptor.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\match.model.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\match.model.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\player-match.model.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\player-match.model.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\user.model.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\models\user.model.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\login.service.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\login.service.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\match.service.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\match.service.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\user.service.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\services\user.service.ts" />
     <TypeScriptCompile Include="cleverbit-game\src\environments\environment.prod.ts" />
     <TypeScriptCompile Include="cleverbit-game\src\environments\environment.ts" />
     <TypeScriptCompile Include="cleverbit-game\src\main.ts" />
