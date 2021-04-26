@@ -168,11 +168,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="app\app.component.html" />
-    <Content Include="favicon.ico" />
+    <Content Include="cleverbit-game\e2e\protractor.conf.js" />
+    <Content Include="cleverbit-game\karma.conf.js" />
+    <Content Include="cleverbit-game\src\app\app.component.html" />
+    <Content Include="cleverbit-game\src\favicon.ico" />
+    <Content Include="cleverbit-game\src\index.html" />
     <Content Include="Global.asax" />
-    <Content Include="index.html" />
-    <Content Include="karma.conf.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -188,20 +189,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".browserslistrc" />
-    <Content Include=".editorconfig" />
     <Content Include=".gitignore" />
-    <Content Include="angular.json" />
-    <Content Include="app\app.component.scss" />
-    <Content Include="package.json" />
-    <None Include="packages.config" />
-    <Content Include="proxy.conf.json" />
-    <Content Include="README.md" />
-    <Content Include="styles.scss" />
-    <Content Include="tsconfig.app.json" />
-    <Content Include="tsconfig.json" />
-    <Content Include="tsconfig.spec.json" />
-    <Content Include="tslint.json" />
+    <Content Include="cleverbit-game\.browserslistrc" />
+    <Content Include="cleverbit-game\.editorconfig" />
+    <Content Include="cleverbit-game\.gitignore" />
+    <Content Include="cleverbit-game\angular.json" />
+    <Content Include="cleverbit-game\e2e\tsconfig.json" />
+    <Content Include="cleverbit-game\package.json" />
+    <Content Include="cleverbit-game\README.md" />
+    <Content Include="cleverbit-game\src\app\app.component.scss" />
+    <Content Include="cleverbit-game\src\assets\.gitkeep" />
+    <Content Include="cleverbit-game\src\styles.scss" />
+    <Content Include="cleverbit-game\tsconfig.app.json" />
+    <Content Include="cleverbit-game\tsconfig.json" />
+    <Content Include="cleverbit-game\tsconfig.spec.json" />
+    <Content Include="cleverbit-game\tslint.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -214,15 +216,6 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app\app-routing.module.ts" />
-    <TypeScriptCompile Include="app\app.component.spec.ts" />
-    <TypeScriptCompile Include="app\app.component.ts" />
-    <TypeScriptCompile Include="app\app.module.ts" />
-    <TypeScriptCompile Include="main.ts" />
-    <TypeScriptCompile Include="polyfills.ts" />
-    <TypeScriptCompile Include="test.ts" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
@@ -230,6 +223,19 @@
       <Project>{bac26b18-370b-4613-a620-94c6393246d1}</Project>
       <Name>CleverbitRandomNumbersGame.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="cleverbit-game\e2e\src\app.e2e-spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\e2e\src\app.po.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\app.component.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\app\app.module.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\environments\environment.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\main.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\polyfills.ts" />
+    <TypeScriptCompile Include="cleverbit-game\src\test.ts" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'cleverbit-random-number'`, () => {
+  it(`should have as title 'cleverbit-game'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cleverbit-random-number');
+    expect(app.title).toEqual('cleverbit-game');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('cleverbit-random-number app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('cleverbit-game app is running!');
   });
 });

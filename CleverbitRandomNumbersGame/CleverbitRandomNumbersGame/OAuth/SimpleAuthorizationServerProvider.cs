@@ -14,9 +14,9 @@ namespace CleverbitRandomNumbersGame.OAuth
   {
     private readonly IUserService userService;
 
-    public SimpleAuthorizationServerProvider(IUserService userService)
+    public SimpleAuthorizationServerProvider()
     {
-      this.userService = userService;
+      this.userService = new UserService(new Domain.EFContext());
     }
 
     public override async Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)

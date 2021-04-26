@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/cleverbit-random-number'),
+      dir: require('path').join(__dirname, './coverage/cleverbit-game'),
       subdir: '.',
       reporters: [
         { type: 'html' },

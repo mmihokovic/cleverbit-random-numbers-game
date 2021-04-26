@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cleverbit-random-number": {
+    "cleverbit-game": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cleverbit-random-number",
+            "outputPath": "dist/cleverbit-game",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -65,18 +65,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cleverbit-random-number:build"
+            "browserTarget": "cleverbit-game:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "cleverbit-random-number:build:production"
+              "browserTarget": "cleverbit-game:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cleverbit-random-number:build"
+            "browserTarget": "cleverbit-game:build"
           }
         },
         "test": {
@@ -113,16 +113,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "cleverbit-random-number:serve"
+            "devServerTarget": "cleverbit-game:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "cleverbit-random-number:serve:production"
+              "devServerTarget": "cleverbit-game:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "cleverbit-random-number"
+  "defaultProject": "cleverbit-game"
 }
